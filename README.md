@@ -31,16 +31,16 @@
 
 # Built with: 
 
-# Backend
+## Backend
 ### Javascript
 ### Node.js
 ### Express
 ### MongoDB
 
-# Frontend
+## Frontend
 ### Bootstrap
 
-# IDE
+## IDE
 ### Visual Studio Code
 
 
