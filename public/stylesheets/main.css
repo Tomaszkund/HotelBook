@@ -1,0 +1,26 @@
+body{
+    font-family: 'Merriweather', serif;
+    font-size: 400;
+
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 15px;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#delete-form {
+    display: inline;
+}
+
+.pull-right {
+    float: right;
+}
+

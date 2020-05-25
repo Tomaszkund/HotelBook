@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotel Booking</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-light" style="background-color: #e9ecef;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Hotel Booking </a>   
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">     
+                    <% if(!currentUser) { %>
+                         <a class="nav-link " href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                         <a class="nav-link" href="/register">Sign Up</a>
+                 </li>
+                    <%  } else {  %>
+                <li class="nav-item">
+                        <a class="nav-link" href="/register">Sign In as | <%= currentUser.username %></a>
+            <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+            </li>
+                     <%  }  %>       
+        </ul>
+            
+        </div>
+    </nav>  
+
+    <br>
+<div class="container">
+
+    <% if(error && error.length > 0){ %>
+
+    <div class="alert alert-danger" role="alert">
+        <%= error %>
+    </div>
+    <% } %>
+
+    <% if(success && success.length > 0){ %>
+
+        <div class="alert alert-success" role="alert">
+            <%= success %>
+        </div>
+    <% } %>
+</div>
+    
+    

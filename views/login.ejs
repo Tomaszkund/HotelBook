@@ -1,0 +1,54 @@
+<%- include("./partials/header") %> 
+
+<body style="background-color: #f6f4f1;">
+</body>
+
+<div class="container"> 
+    <p class="container-login"> 
+<h1>Login!</h1>
+<p>-Login to the account Booking hotel-</p>
+<form action="/login" method="POST">
+    <input type="text" name="username" placeholder="username">
+    <br></br>
+    <input type="password" name="password" placeholder="password">
+    <br></br>
+    <hr style="width:20%; text-align:left; margin-left:0">
+    <br></>
+    <button class="btn btn-lg btn-warning">Login!</button>  
+</form>
+<br>
+<div class="container-left"">
+<h6>You dont have acount already? </h6>
+<h6>You can do it in 1 min!</h6> 
+<form action="/register" method="post">
+    <hr style="width:20%; text-align:left; margin-left:0">
+    <button class="btn btn-lg btn-primary">Create acount</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<%- include("./partials/footer") %> 
+<!-- 
+
+<h1>Sign up!</h1>
+<p> -Create account to use Booking hotel</p>
+
+
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+  </form> -->
