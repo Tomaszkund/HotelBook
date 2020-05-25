@@ -5,7 +5,7 @@
 ### In this Web Application we can add a new hotel, we have login and register new users in our app, we can add new comments, edit comments or hotel details
 
 
-### App Features ?
+# App Features ?
 
 ### Authentication 
 ### Login and registration
@@ -16,9 +16,9 @@
 
 
 
-## Built with: 
+# Built with: 
 
-# Backend
+## Backend
 ### Javascript
 ### Node.js
 ### Express
